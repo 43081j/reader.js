@@ -1,6 +1,6 @@
 {
   "name": "readerjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "43081j",
   "description": "A tiny unified data reader interface for AJAX, local and File API access.",
   "main": "./dist/reader.js",
