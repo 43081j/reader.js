@@ -1,0 +1,12 @@
+{
+  "name": "readerjs",
+  "version": "0.0.1",
+  "author": "43081j",
+  "description": "A tiny unified data reader interface for AJAX, local and File API access.",
+  "main": "./dist/reader.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/43081j/reader.js.git"
+  },
+  "license": "MIT"
+}
