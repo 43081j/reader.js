@@ -67,6 +67,10 @@
 	};
 
 	Reader.prototype.read = function(length, position, callback) {
+		if(typeof position === 'function') {
+			callback = position;
+			position = 0;
+		}
 		if(this.type === Reader.OPEN_LOCAL) {
 			this.readLocal(length, position, callback);
 		} else if(this.type === Reader.OPEN_FILE) {
@@ -77,7 +81,10 @@
 	};
 
 	Reader.prototype.readBlob = function(length, position, type, callback) {
-		if(typeof type === 'function') {
+		if(typeof position === 'function') {
+			callback = position;
+			position = 0;
+		} else if(typeof type === 'function') {
 			callback = type;
 			type = 'application/octet-stream';
 		}
