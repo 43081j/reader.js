@@ -31,7 +31,7 @@ Methods
 
 * `open(file, callback)` Open the specified file and call the callback on completion/ready
 * `close()` Close the handle and clean up
-* `read(length, position, callback)` Read `length` bytes from offset `position` and call `callback` with the resulting ArrayBuffer
+* `read(length, position, callback)` Read `length` bytes from offset `position` and call `callback` with the resulting ArrayBuffer. If `position` is a function, it will be assumed to be the callback.
 
 Notes
 ===
