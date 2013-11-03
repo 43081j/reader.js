@@ -10,7 +10,9 @@ Example
 var rd = new Reader(Reader.OPEN_FILE);
 rd.open(file, function() {
 	// file has now been opened and is ready for reading
-	var data = rd.read(1024);
+	rd.read(1024, function(err, data) {
+		// data is now an ArrayBuffer
+	});
 });
 ```
 
