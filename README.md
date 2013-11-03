@@ -24,6 +24,13 @@ The following types exist:
 
 The default is `Reader.OPEN_URI`.
 
+Methods
+===
+
+* `open(file, callback)` Open the specified file and call the callback on completion/ready
+* `close()` Close the handle and clean up
+* `read(length, position, callback)` Read `length` bytes from offset `position` and call `callback` with the resulting ArrayBuffer
+
 Notes
 ===
 
