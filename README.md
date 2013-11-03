@@ -18,11 +18,11 @@ Here, `data` will be an `ArrayBuffer` containing the first 1024 bytes from the s
 
 The following types exist:
 
-* `Reader.OPEN\_FILE` Treat the specified object as a `File` instance (HTML5 File API)
-* `Reader.OPEN\_URI` Read the given URI by HTTP request
-* `Reader.OPEN\_LOCAL` Read the given path locally, works only in NodeJS
+* `Reader.OPEN_FILE` Treat the specified object as a `File` instance (HTML5 File API)
+* `Reader.OPEN_URI` Read the given URI by HTTP request
+* `Reader.OPEN_LOCAL` Read the given path locally, works only in NodeJS
 
-The default is `Reader.OPEN\_URI`.
+The default is `Reader.OPEN_URI`.
 
 Notes
 ===
